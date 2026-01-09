@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowUturnLeftIcon, EnvelopeIcon, ChatBubbleLeftRightIcon, QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
+import { ArrowUturnLeftIcon, EnvelopeIcon, BriefcaseIcon, ChatBubbleLeftRightIcon, QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
 import { View } from '../../App';
 
 interface ContactProps {
@@ -38,15 +38,22 @@ const Contact: React.FC<ContactProps> = ({ onBack, onNavigate }) => {
                         icon={<EnvelopeIcon className="w-8 h-8 text-rose-500" />}
                         title="Email Us"
                         content="For support or general inquiries, please email us at:"
-                        link="mailto:hello@weddingcardmaker.com"
-                        linkText="hello@weddingcardmaker.com"
+                        link="mailto:WeddingCardDesigns@protonmail.com"
+                        linkText="WeddingCardDesigns@protonmail.com"
                     />
+                    <InfoBlock
+                        icon={<BriefcaseIcon className="w-8 h-8 text-amber-500" />}
+                        title="Business Enquiry"
+                        content="For partnerships, advertising, or business-related enquiries, contact us at:"
+                        link="mailto:WeddingCardDesigns@protonmail.com"
+                        linkText="WeddingCardDesigns@protonmail.com"
+        />
                     <InfoBlock
                         icon={<ChatBubbleLeftRightIcon className="w-8 h-8 text-indigo-500" />}
                         title="Feedback"
                         content="Have a suggestion or a feature request? We're all ears!"
-                        link="mailto:feedback@weddingcardmaker.com"
-                        linkText="feedback@weddingcardmaker.com"
+                        link="mailto:WeddingCardDesigns@protonmail.com"
+                        linkText="WeddingCardDesigns@protonmail.com"
                     />
                      <InfoBlock
                         icon={<QuestionMarkCircleIcon className="w-8 h-8 text-teal-500" />}
