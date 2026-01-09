@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-  <!-- Icons -->
+    <!-- Icons -->
   <link rel="icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -16,7 +15,7 @@
     <meta name="description" content="Create beautiful, custom wedding invitations for free with our easy-to-use card maker. Choose from elegant templates, customize text with advanced tools, and download your shareable design instantly." />
     <meta name="keywords" content="wedding card maker, free wedding invitations, digital invitation, wedding card design, online invitation maker, wedding e-card" />
     <link rel="canonical" href="https://free-wedding-cards-maker.vercel.app/" />
-    <meta name="google-site-verification" content="4dFu4PUk1pc1IYqU6Brt84akCwNxaoUpKSO3gDW0kJ0" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://free-wedding-cards-maker.vercel.app/" />
@@ -31,8 +30,70 @@
     <meta property="twitter:description" content="Create beautiful, custom wedding invitations for free with our easy-to-use card maker. Choose a template and personalize it instantly." />
     <meta property="twitter:image" content="https://free-wedding-cards-maker.vercel.app/og-image.jpg" />
     
-    <!-- Dynamic Schema.org Markup -->
-    <script id="app-schema" type="application/ld+json"></script>
+    <!-- Schema.org Markup -->
+    <!-- 1. Static Website Schema (for sitelinks search box) -->
+    <script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Wedding Card Designs - Free Wedding Cards Maker",
+      "url": "https://free-wedding-cards-maker.vercel.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://free-wedding-cards-maker.vercel.app/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }</script>
+
+    <!-- 2. Dynamic Page-Specific Schema (Managed by React) -->
+    <script id="app-schema" type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Create a Free Wedding Invitation",
+      "description": "A simple guide to designing your custom wedding card using our free online tool.",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "0"
+      },
+      "supply": {
+        "@type": "HowToSupply",
+        "name": "A modern web browser"
+      },
+      "tool": {
+        "@type": "HowToTool",
+        "name": "Free Online Wedding Card Maker"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Choose a Template",
+          "text": "Select a beautiful, professionally designed template to start your creation.",
+          "url": "https://free-wedding-cards-maker.vercel.app/",
+          "image": "https://free-wedding-cards-maker.vercel.app/og-image.jpg"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Customize Text",
+          "text": "Edit the names, dates, and messages. Add new text layers as needed.",
+          "url": "https://free-wedding-cards-maker.vercel.app/"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Adjust Styles",
+          "text": "Personalize your invitation by changing fonts, colors, sizes, and applying advanced effects like shadows and gradients.",
+          "url": "https://free-wedding-cards-maker.vercel.app/"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Download Your Card",
+          "text": "Once you are happy with your design, download the final invitation as a high-quality JPEG image, ready to be shared.",
+          "url": "https://free-wedding-cards-maker.vercel.app/"
+        }
+      ]
+    }</script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,7 +151,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-gray-50">
     <div style="position: absolute; left: -9999px; visibility: hidden; width: 0; height: 0; overflow: hidden;">
@@ -122,10 +182,9 @@
       <span class="font-noto-sans-kannada"></span>
     </div>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-   
-<script async data-id="101499432" src="/769aafcd331a.js"></script>
-<script async data-id="101499432" src="//static.getclicky.com/js"></script>
+    <script type="module" src="/index.tsx"></script>
+    <script async data-id="101499432" src="/769aafcd331a.js"></script>
+    <script async data-id="101499432" src="//static.getclicky.com/js"></script>
 
   <!-- <script>(function (s) {s.dataset.zone = '10333131', s.src = 'https://groleegni.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
  
@@ -135,13 +194,13 @@
   <!-- Google tag (gtag.js) -->
  
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M23DRQYRS5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M23DRQYRS5"></script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-M23DRQYRS5');
-</script>
+    gtag('config', 'G-M23DRQYRS5');
+    </script>
 </body>
 </html>
